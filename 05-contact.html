@@ -31,7 +31,7 @@
                 </li>
             </ul>
         </nav>
-        <p>Error</p>
+        <p>Contacto</p>
     </header>
     <hr>
     <main>
@@ -46,16 +46,19 @@
                 <input type="email" id="correo" name="correo" required/>
             </p>
             <p>
-                <label for="pais">País</label>
-                <input type="text" id="pais" name="pais" required/>
+                <label for="paises">País</label>
+                <select id="paises" required>
+                    <option value="esp">España</option>
+                    <option value="usa">Estados Unidos</option>
+                </select>
             </p>
             <p>
                 <label for="asunto">Asunto</label>
                 <input type="text" id="asunto" name="asunto" required/>
             </p>
             <p>
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" rows="4" cols="50"></textarea>
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" rows="10" cols="50" required></textarea>
             </p>
             <input type="submit" value="Enviar"/>
         </form>
@@ -74,15 +77,15 @@
         </header>
         <article>
             <p>Sede Enlace: Gran Vía, 34, Centro, 28013 Madrid</p>
-            <img src="" alt="vista sede madrid google maps" width="388"/>
+            <a href="https://acortar.link/HhodBu" target="_blank"><img src="./assets/img/headquarters_madrid.PNG" alt="vista sede madrid google maps" width="388"/></a>
         </article>
         <article>
             <p>Sede Main: 4298 24th St, San Francisco, CA, 94114</p>
-            <img src="" alt="vista sede san francisco google maps" width="388"/>
+            <a href="https://acortar.link/5mc12g" target="_blank"><img src="./assets/img/headquarters_san_francisco.PNG" alt="vista sede san francisco google maps" width="388"/></a>
         </article>
     </section>
     <aside>
-        <a href="#top"><img src="./assets/img/go_to_top_black.png" alt="startpoint icon" width="36"></a>
+        <a href="#top"><img src="./assets/img/go_to_top_black.png" alt="ir a la cabecera" width="36"></a>
      </aside>
     <hr>
     <footer>
@@ -100,15 +103,15 @@
             <article>
                 <p>Sede Main: 4298 24th St, San Francisco, CA, 94114</p>
                 <p>Sede Enlace: Gran Vía, 34, Centro, 28013 Madrid</p>
-                <p>Teléfono California: 1 800 553 2447</p>
-                <p>Teléfono España: 34 91 234 56 78</p>
-                <img src="./assets/img/whatsapp_icon.png" alt="icono whatsapp" width="36">
+                <p>Teléfono California: +1 800 553 2447</p>
+                <p>Teléfono España: +34 91 234 56 78</p>
+                <a href="tel:+34912345678"><img src="./assets/img/whatsapp_icon.png" alt="icono whatsapp" width="36"></a>
             </article>
             <article>
-                <img src="./assets/img/youtube_icon.png" alt="icono youtube" width="36">
-                <img src="./assets/img/facebook_icon.png" alt="icono facebook" width="36">
-                <img src="./assets/img/instagram_icon.png" alt="icono instagram" width="36">
-                <img src="./assets/img/twitter_icon.png" alt="icono twitter" width="36">
+                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/youtube_icon.png" alt="icono youtube" width="36"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/facebook_icon.png" alt="icono facebook" width="36"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/instagram_icon.png" alt="icono instagram" width="36"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/twitter_icon.png" alt="icono twitter" width="36"></a>
             </article>
         </section>
     </footer>
