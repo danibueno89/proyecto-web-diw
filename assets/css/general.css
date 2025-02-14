@@ -1,6 +1,10 @@
 /* VARIABLES PARA COLORES DE LAS GUÍA DE ESTILO */
 :root {
+  --primary-100: #9edfff;
   --primary-400: #00a8fc;
+  --secondary-700: #6a6a6a;
+  --secondary-50: #eaeaea;
+  --neutral-400: #DAE8EF;
 }
 
 /* QUITAMOS TODOS LOS MÁRGENES Y ESPACIOS DEL NAVEGADOR */
@@ -9,11 +13,27 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 /*
 =================================== 
     FUENTES PARA LA WEB
 ===================================
 */
+
+/* IBM FLEX MONO */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
+@font-face {
+  font-family: 'Algerian';
+  src: url('../fonts/algerian.ttf') format('truetype'); /* Ajusta la ruta según tu estructura de archivos */
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   font-size: 24px;
   font-family: Lato;
@@ -46,10 +66,11 @@ h5 {
 
 p {
   font-size: 12px;
-  font-family: 'IBM Plex Mono';
+  font-family: "IBM Plex Mono", monospace;
 }
 
-a, li {
+a,
+li {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
@@ -60,7 +81,7 @@ CABECERA DEL DOM
 ===================================
 */
 .cabecera-global {
-  background-color: #dae8ef;
+  background-color: var(--neutral-400);
   display: flex;
 }
 
@@ -71,15 +92,11 @@ CABECERA DEL DOM
   width: 40%;
 }
 
-.cabecera-global a {
-  justify-self: flex-end;
-}
-
 .cabecera-global p {
+  font-family: 'Algerian', cursive;
   font-size: 3em;
   color: var(--primary-400);
   text-align: center;
-  justify-self: flex-start;
 }
 
 .cabecera-global section:nth-child(2) {
@@ -93,8 +110,12 @@ CABECERA DEL DOM
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 0.5em;
   justify-content: space-evenly;
+}
+
+.cabecera-global li {
+  padding: 0.5rem;
 }
 
 .cabecera-global a,
@@ -104,8 +125,11 @@ li {
   font-size: 1.2em;
 }
 
-.cabecera-global a:hover {
-  box-shadow: 0 0 20px #00a8fc;
+/* TRANSICIONES */
+.cabecera-global section:last-child a:hover {
+  background-color: var(--primary-100);
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
 /*
@@ -115,8 +139,12 @@ ASIDE DEL DOM
 */
 aside {
   position: fixed;
-  right: 20px;
-  bottom: 20%;
+  right: 3%;
+  bottom: 10%;
+}
+
+aside img {
+  width: 36px;
 }
 
 /*
@@ -125,6 +153,7 @@ PIE DEL DOM
 ===================================
 */
 footer {
+  background-color: var(--neutral-400);
   height: 150px;
   display: flex;
   justify-content: space-around;
@@ -181,7 +210,7 @@ footer section:last-child a {
 footer section:last-child article:first-child {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
 footer section:last-child article:first-child img {
@@ -193,6 +222,7 @@ footer section:last-child article:last-child {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 1rem 0.5rem;
 }
 
 footer section:last-child article:last-child a {
