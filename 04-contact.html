@@ -11,6 +11,7 @@
     <title>Contacto</title>
     <link rel="icon" href="./assets/img/pictures-backgrounds/brand-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/estilos-generales.css"/>
+    <link rel="stylesheet" href="./assets/css/contact-styles.css"/>
 </head>
 
 <!-- CUERPO DE WEB -->
@@ -19,7 +20,7 @@
 
     <!-- CABECERA -->
     <header id="top">
-        <nav>
+        <nav id="nav-header">
             <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
                     width="200" /></a>
             <ul>
@@ -37,79 +38,73 @@
                 </li>
             </ul>
         </nav>
-        <img src="./assets/img/icons/arrow_right_black.png" alt="arrow-right" width="24">
-        <p>Inicio > Contacto</p> <img src="./assets/img/icons/arrow_right_black.png" alt="arrow-right" width="24">
-    </header>
-
-    <!-- SEPARACIÓN -->
-    <hr>
+        <p class="migasPan">INICIO > CONTACTO</p>
+    </header>   
 
     <!-- PARTE PRINCIPAL -->
     <main>
-        <form>
-            <h1>Formulario</h1>
-            <p>
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required />
-            </p>
-            <p>
-                <label for="mail">Corre Electrónico</label>
-                <input type="email" id="mail" name="mail" required />
-            </p>
-            <p>
-                <label for="countries">País</label>
-                <select id="countries" required>
-                    <option value="esp">España</option>
-                    <option value="usa">Estados Unidos</option>
-                </select>
-            </p>
-            <p>
-                <label for="subject">Asunto</label>
-                <input type="text" id="subject" name="subject" required />
-            </p>
-            <p>
-                <label for="message">Mensaje</label><br>
-                <textarea id="message" rows="10" cols="50" required></textarea>
-            </p>
-            <input type="submit" value="Enviar" />
-        </form>
-
-        <h2>Información de contacto</h2>
-        <section>
-            <header>
-                <h3>Por teléfono</h3>
-            </header>
-            <p>Teléfono España: <a href="tel:+34912345678">+34 91 234 56 78</a></p>
-            <p>Teléfono California: <a href="tel:+18005532447">+1 800 553 2447</a></p>
+        <section id="contact-info">
+            <h2>Información de contacto</h2>
+            <section>
+                <header>
+                    <h2>Por teléfono</h2>
+                </header>
+                <p>Teléfono España: <a href="tel:+34912345678">+34 91 234 56 78</a></p>
+                <p>Teléfono California: <a href="tel:+18005532447">+1 800 553 2447</a></p>
+            </section>
+            <section>
+                <header>
+                    <h2>Direcciones Físicas</h2>
+                </header>
+                <article>
+                    <p>Sede Enlace: Gran Vía, 34, Centro, 28013 Madrid</p>
+                    <a href="https://acortar.link/HhodBu" target="_blank"><img src="./assets/img/headquarters_madrid.PNG"
+                            alt="headquarters-in-madrid-on-google-maps" width="388" /></a>
+                </article>
+                <article>
+                    <p>Sede Main: 4298 24th St, San Francisco, CA, 94114</p>
+                    <a href="https://acortar.link/5mc12g" target="_blank"><img
+                            src="./assets/img/headquarters_san_francisco.PNG" alt="headquarters-in-san-francisco-on-google-maps"
+                            width="388" /></a>
+                </article>
+            </section>
         </section>
-        <section>
-            <header>
-                <h3>Direcciones Físicas</h3>
-            </header>
-            <article>
-                <p>Sede Enlace: Gran Vía, 34, Centro, 28013 Madrid</p>
-                <a href="https://acortar.link/HhodBu" target="_blank"><img src="./assets/img/headquarters_madrid.PNG"
-                        alt="headquarters-in-madrid-on-google-maps" width="388" /></a>
-            </article>
-            <article>
-                <p>Sede Main: 4298 24th St, San Francisco, CA, 94114</p>
-                <a href="https://acortar.link/5mc12g" target="_blank"><img
-                        src="./assets/img/headquarters_san_francisco.PNG" alt="headquarters-in-san-francisco-on-google-maps"
-                        width="388" /></a>
-            </article>
+
+        <section id="form-container">
+            <form id="form">
+                <h1>Formulario</h1>
+                <p>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required />
+                </p>
+                <p>
+                    <label for="mail">Corre Electrónico</label>
+                    <input type="email" id="mail" name="mail" required />
+                </p>
+                <p>
+                    <label for="countries">País</label>
+                    <select id="countries" required>
+                        <option value="esp">España</option>
+                        <option value="usa">Estados Unidos</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" required />
+                </p>
+                <p>
+                    <label for="message">Mensaje</label><br>
+                    <textarea id="message" rows="10" cols="50" required></textarea>
+                </p>
+                <input type="submit" value="Enviar" />
+            </form>
         </section>
     </main>
-
-   <!-- SEPARACIÓN -->
-   <hr>
 
    <!-- ANCLA HACIA HEADER -->
    <aside>
       <a href="#top"><img src="./assets/img/icons/go-to-top-black.png" alt="go-to-top" width="36"></a>
    </aside>
-
-   <!-- SEPARACIÓN -->
-   <hr>
 
    <!-- PIE DE PÁGINA -->
    <footer>
