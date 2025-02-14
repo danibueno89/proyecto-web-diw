@@ -10,8 +10,8 @@
       CPD, y aplicaciones web para la seguridad personal y profesional. Ofrecemos servicios personalizados con tecnología de última generación para mantener tus datos y dispositivos protegidos.">
     <title>Contacto</title>
     <link rel="icon" href="./assets/img/pictures-backgrounds/brand-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/estilos-generales.css"/>
-    <link rel="stylesheet" href="./assets/css/contact-styles.css"/>
+    <link rel="stylesheet" href="./assets/css/general.css"/>
+    <link rel="stylesheet" href="./assets/css/contact.css"/>
 </head>
 
 <!-- CUERPO DE WEB -->
@@ -19,26 +19,31 @@
 <body>
 
     <!-- CABECERA -->
-    <header id="top">
-        <nav id="nav-header">
-            <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
-                    width="200" /></a>
-            <ul>
-                <li>
-                    <a href="#">PROYECTOS</a>
-                </li>
-                <li>
-                    <a href="#">EMPRESA</a>
-                </li>
-                <li>
-                    <a href="./02-item-list.html">APP WEB</a>
-                </li>
-                <li>
-                    <a href="./04-contact.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-        <p class="migasPan">INICIO > CONTACTO</p>
+    <header id="header" class="cabecera-global">
+        <section>
+        <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
+                width="200" /></a>
+        <p>RELAX<br>SOFT</p>
+        </section>
+        <section>
+        <ul>
+            <li>
+                <a href="#">PROYECTOS</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a href="#">EMPRESA</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a href="./02-item-list.html">APP WEB</a>
+            </li>
+            <li>|</li>
+            <li>
+                <a href="./04-contact.html">CONTACTO</a>
+            </li>
+        </ul>
+        </section>
     </header>   
 
     <!-- PARTE PRINCIPAL -->
@@ -57,15 +62,13 @@
                     <h2>Direcciones Físicas</h2>
                 </header>
                 <article>
-                    <p>Sede Enlace: Gran Vía, 34, Centro, 28013 Madrid</p>
-                    <a href="https://acortar.link/HhodBu" target="_blank"><img src="./assets/img/headquarters_madrid.PNG"
-                            alt="headquarters-in-madrid-on-google-maps" width="388" /></a>
+                    <p>Sede Main: 4298 24th St, San Francisco, CA, 94114</p>
+                    <iframe src="https://acortar.link/HhodBu" width="300" height="300" allowfullscreen></iframe>
                 </article>
                 <article>
-                    <p>Sede Main: 4298 24th St, San Francisco, CA, 94114</p>
-                    <a href="https://acortar.link/5mc12g" target="_blank"><img
-                            src="./assets/img/headquarters_san_francisco.PNG" alt="headquarters-in-san-francisco-on-google-maps"
-                            width="388" /></a>
+                    <p>Sede Enlace: Gran Vía, 34, Centro, 28013 Madrid</p>
+                    <iframe src="https://www.google.es/maps/place/Gran+V%C3%ADa,+34,+Centro,+28013+Madrid/@40.4204451,-3.7039998,18z/data=!4m6!3m5!1s0xd42287d83d16191:0xa5af3da92a18378e!8m2!3d40.4204647!4d-3.70403!16s%2Fg%2F11cncg2vxd?entry=ttu&g_ep=EgoyMDI1MDIxMS4wIKXMDSoASAFQAw%3D%3D"
+                        width="300" height="300" allowfullscreen></iframe>
                 </article>
             </section>
         </section>
@@ -73,29 +76,24 @@
         <section id="form-container">
             <form id="form">
                 <h1>Formulario</h1>
-                <p>
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required />
-                </p>
-                <p>
-                    <label for="mail">Corre Electrónico</label>
-                    <input type="email" id="mail" name="mail" required />
-                </p>
-                <p>
+                    <input type="text" id="name" name="name" required /><br>
+
+                    <label for="mail">Correo Electrónico</label>
+                    <input type="email" id="mail" name="mail" required/><br>
+
                     <label for="countries">País</label>
                     <select id="countries" required>
                         <option value="esp">España</option>
                         <option value="usa">Estados Unidos</option>
-                    </select>
-                </p>
-                <p>
+                    </select><br>
+
                     <label for="subject">Asunto</label>
-                    <input type="text" id="subject" name="subject" required />
-                </p>
-                <p>
+                    <input type="text" id="subject" name="subject" required/><br>
+
                     <label for="message">Mensaje</label><br>
                     <textarea id="message" rows="10" cols="50" required></textarea>
-                </p>
+
                 <input type="submit" value="Enviar" />
             </form>
         </section>
@@ -109,48 +107,57 @@
    <!-- PIE DE PÁGINA -->
    <footer>
 
-      <!-- SECCIÓN FOOTER LEGALIDAD-->
-      <section>
-         <p>
-            <span>&copy; Copyright 2024 Relax Soft</span>
-            <span>Política de cookies</span>
-         </p>
-         <p>
-            <span>Términos y condiciones</span>
-            <span>Accesibilidad</span>
-         </p>
-      </section>
+    <!-- SECCIÓN FOOTER LEGALIDAD-->
+    <section>
+       <p>&copy; Copyright 2024 Relax Soft</p>
+       <p>Política de cookies</p>
+       <p>Términos y condiciones</p>
+       <p>Accesibilidad</p>
+    </section>
 
-      <!-- SECCIÓN FOOTER CONTACTO-->
-      <section>
+    <!-- BARRA VERTICAL PARA DECORAR Y SEPARAR SECTION EN FOOTER -->
+    <hr>
 
-         <!-- ARTÍCULO DIRECCIONES Y TELÉFONOS -->
-         <article>
-            <p>Sede Main: <a
-                  href="https://acortar.link/5mc12g">4298
-                  24th St, San Francisco, CA, 94114</a></p>
-            <p>Sede Enlace: <a
-                  href="https://acortar.link/HhodBu">Gran
-                  Vía, 34, Centro, 28013 Madrid</a></p>
-            <p>Teléfono California: <a href="tel:+1 800 553 2447">+1 800 553 2447</a> </p>
-            <p>Teléfono España: <a href="tel:+34 91 234 56 78">+34 91 234 56 78</a></p>
-            <a href="whatsapp://send?phone=666666666"><img src="./assets/img/icons/whatsapp-icon.png"
-                  alt="whatsapp-icon" width="36"></a>
-         </article>
+    <!-- SECCIÓN FOOTER CONTACTO-->
+    <section>
 
-         <!-- ARTÍCULO REDES SOCIALES -->
-         <article>
-            <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/icons/youtube-icon.png"
-                  alt="youtube-icon" width="36"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/icons/facebook-icon.png"
-                  alt="facebook-icon" width="36"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/icons/instagram-icon.png"
-                  alt="instagram-icon" width="36"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/icons/twitter-icon.png"
-                  alt="twitter-icon" width="36"></a>
-         </article>
-      </section>
-   </footer>
+       <!-- ARTÍCULO DIRECCIONES Y TELÉFONOS -->
+       <article>
+          
+          <p>
+             <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
+             Teléfono California: <a href="tel:+1 800 553 2447">+1 800 553 2447</a>
+          </p>
+          
+          <p>
+             <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
+             Teléfono España: <a href="tel:+34 91 234 56 78">+34 91 234 56 78</a>
+          </p>
+          
+          <p>
+             <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
+             Sede Main: <a href="https://acortar.link/5mc12g">4298, 24th St, San Francisco, CA, 94114</a>
+          </p>
+
+          <p>
+             <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
+             Sede Enlace: <a href="https://acortar.link/HhodBu">Gran Vía, 34, Centro, 28013 Madrid</a>
+          </p>
+       </article>
+
+       <!-- ARTÍCULO REDES SOCIALES -->
+       <article>
+          <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/icons/youtube-icon.png"
+                alt="youtube-icon" width="36"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/icons/facebook-icon.png"
+                alt="facebook-icon" width="36"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/icons/instagram-icon.png"
+                alt="instagram-icon" width="36"></a>
+          <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/icons/twitter-icon.png"
+                alt="twitter-icon" width="36"></a>
+       </article>
+    </section>
+ </footer>
 </body>
 
 </html>
