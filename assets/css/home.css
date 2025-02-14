@@ -13,14 +13,6 @@ main {
   background-color: var(--secondary-50);
 }
 
-main .breadcrumb {
-  justify-self: center;
-  font-size: 1.5rem;
-  font-family: Roboto, sans-serif;
-  color: var(--secondary-700);
-  text-decoration: none;
-}
-
 main section {
   margin: 0 3rem;
   display: flex;
@@ -70,6 +62,7 @@ main section .infoProducto button {
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
+  transition-duration: 1s;
 }
 
 main section .imagenProducto {
@@ -86,7 +79,8 @@ main section .imagenProducto {
 }
 
 /* TRANSICIONES */
-main button:hover {
+main section .infoProducto button:hover {
   background-color: var(--primary-400);
   cursor: pointer;
+  transition-duration: 1s;
 }
