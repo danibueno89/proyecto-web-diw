@@ -1,0 +1,201 @@
+/* VARIABLES PARA COLORES DE LAS GUÍA DE ESTILO */
+:root {
+  --primary-400: #00a8fc;
+}
+
+/* QUITAMOS TODOS LOS MÁRGENES Y ESPACIOS DEL NAVEGADOR */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+=================================== 
+    FUENTES PARA LA WEB
+===================================
+*/
+h1 {
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 19px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 19px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 17px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 15px;
+  font-family: Source Code Pro;
+  font-weight: 300;
+}
+
+p {
+  font-size: 12px;
+  font-family: 'IBM Plex Mono';
+}
+
+a, li {
+  font-family: "Roboto", sans-serif;
+
+}
+
+/*
+=================================== 
+CABECERA DEL DOM
+===================================
+*/
+.cabecera-global {
+  background-color: #dae8ef;
+  display: flex;
+}
+
+.cabecera-global section:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.cabecera-global a {
+  justify-self: flex-end;
+}
+
+.cabecera-global p {
+  font-size: 3em;
+  color: var(--primary-400);
+  text-align: center;
+  justify-self: flex-start;
+}
+
+.cabecera-global section:nth-child(2) {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecera-global ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  justify-content: space-evenly;
+}
+
+.cabecera-global a,
+li {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-400);
+  font-size: 1.2em;
+}
+
+.cabecera-global a:hover {
+  box-shadow: 0 0 20px #00a8fc;
+}
+
+/*
+=================================== 
+ASIDE DEL DOM
+===================================
+*/
+aside {
+  position: fixed;
+  right: 20px;
+  bottom: 20%;
+}
+
+/*
+=================================== 
+PIE DEL DOM
+===================================
+*/
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+/*
+=================================== 
+    PRIMERA SECCIÓN DEL FOOTER
+===================================
+*/
+footer section:first-child {
+  margin-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+}
+
+footer section:first-child p {
+  width: 40%;
+}
+
+footer hr {
+  background-color: var(--primary-400);
+  width: 4px;
+  border: none;
+  border-radius: 5px;
+  height: 60%;
+  margin: 0 1rem;
+}
+
+/*
+=================================== 
+    ÚLTIMA SECCIÓN DEL FOOTER
+===================================
+*/
+footer section:last-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+}
+
+footer section:last-child a {
+  text-decoration: none;
+  color: black;
+}
+
+footer section:last-child article:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+footer section:last-child article:first-child img {
+  margin: 0 0.3rem 0 0;
+}
+
+footer section:last-child article:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer section:last-child article:last-child a {
+  width: 40%;
+}
