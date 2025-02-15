@@ -26,6 +26,7 @@ main {
     margin-left: 150px;
     width: 100%;
     display: flex;
+    gap: 150px;
     margin-bottom: 60px;
 }
 
@@ -34,7 +35,7 @@ a {
     color: black;
 }
 
-p + p {
+#contact-info p + p {
     margin-top: 30px;
 }
 
@@ -42,7 +43,13 @@ p + p {
     max-width: 500px;
 }
 
-#form-container {
+iframe {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+#form {
     max-width: 500px;
     width: 500px;
     margin: 20px auto;
@@ -51,6 +58,7 @@ p + p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #DFF4FF;
     border-radius: 5px;
+    padding-bottom: 40px;
 }
 
 #form-container h1 {
@@ -97,11 +105,4 @@ p + p {
 
 #form-container input[type="submit"]:hover {
     background-color: #0b587e;
-}
-
-footer {
-    background-color: #DAE8EF;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    border-radius: 2px;
 }
