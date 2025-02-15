@@ -4,7 +4,7 @@
   --primary-400: #00a8fc;
   --secondary-700: #6a6a6a;
   --secondary-50: #eaeaea;
-  --neutral-400: #DAE8EF;
+  --neutral-400: #dae8ef;
 }
 
 /* QUITAMOS TODOS LOS MÁRGENES Y ESPACIOS DEL NAVEGADOR */
@@ -28,8 +28,8 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
 
 @font-face {
-  font-family: 'Algerian';
-  src: url('../fonts/algerian.ttf') format('truetype'); /* Ajusta la ruta según tu estructura de archivos */
+  font-family: "Algerian";
+  src: url("../fonts/algerian.ttf") format("truetype"); /* Ajusta la ruta según tu estructura de archivos */
   font-weight: normal;
   font-style: normal;
 }
@@ -85,6 +85,10 @@ CABECERA DEL DOM
   display: flex;
 }
 
+.cabecera-global img {
+  transition-duration: 1s;
+}
+
 .cabecera-global section:first-child {
   display: flex;
   align-items: center;
@@ -92,8 +96,8 @@ CABECERA DEL DOM
   width: 40%;
 }
 
-.cabecera-global p {
-  font-family: 'Algerian', cursive;
+.cabecera-global .fuenteLogo {
+  font-family: "Algerian", cursive;
   font-size: 3em;
   color: var(--primary-400);
   text-align: center;
@@ -123,14 +127,74 @@ li {
   text-decoration: none;
   color: var(--primary-400);
   font-size: 1.2em;
+  transition-duration: 1s;
 }
 
 /* TRANSICIONES */
+.cabecera-global img:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
 .cabecera-global section:last-child a:hover {
   background-color: var(--primary-100);
   padding: 0.5rem;
   border-radius: 5px;
+  transition-duration: 0.5s;
 }
+
+/*
+=================================== 
+    BREADCRUMB DE CADA VISTA
+===================================
+*/
+main .breadcrumb {
+  justify-self: center;
+  font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+  color: var(--secondary-700);
+  text-decoration: none;
+  position: relative;
+}
+
+/* FLECHAS DE BREADCRUMBS */
+main .breadcrumb::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/icons/arrow_right_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+main .breadcrumb::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: -50%;
+  top: 50%;
+  transform: translateY(-50%) rotateY(180deg);
+  background-image: url("../img/icons/arrow_right_black.png");
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+main .breadcrumb:hover::before,
+main .breadcrumb:hover::after {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
 
 /*
 =================================== 
