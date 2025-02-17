@@ -1,7 +1,5 @@
 /*  Ajusta el ancho del cuerpo al 100% del viewport y establece un color de fondo   */
 body {
-    width: 100vw;
-    overflow-x: hidden;
     background-color: #EAEAEA;
 }
 
@@ -10,42 +8,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 130px;
+    gap: 90px;
     width: 80%;
     height: 454px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 35px auto;
+    padding: 14px;
     background-color: #DFF4FF;
     border-radius: 5px;
 }
 
 /*  Estilos para el título del error    */
 .tituloError {
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 14px;
+    font-size: 20px;
     text-align: center;
 }
 
 /*  Estilos para los textos del mensaje de error    */
 .descripcionError, .ayudaError {
-    margin-top: 50px;
-    margin-right: 10px;
-    margin-bottom: 55px;
+    margin-top: 35px;
+    margin-right: 7px;
+    margin-bottom: 37px;
     margin-left: 0px;
-    font-size: 22px;
+    font-size: 15px;
     font-style: italic;
     transform: scaleY(1.2);
 }
 
 /*  Ajusta la separación inferior del texto de la descripción y el espaciado entre las letras   */
 .descripcionError {
-    margin-bottom: 70px;
-    letter-spacing: 0.8px;
+    margin-bottom: 45px;
+    letter-spacing: 0.5px;
 }
 
 /*  Estilos con el tamaño de la imagen  */
 .imagenError {
-    width: 575px;
+    /*width: 575px;*/
+    width: 100%;
     height: 350px;
 }
 
@@ -58,19 +57,56 @@ body {
 .botonSalida {
     display: block;
     margin: 0 auto;
-    padding: 20px 25px;
+    padding: 14px 18px;
     border: none;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     text-decoration: none;
     background-color: #004E75;
-    border-radius: 10px;
+    border-radius: 7px;
     transition: 0.3s;
-    transform: translate(-30px, -5px);
+    transform: translate(-20px, -3px);
 }
 
 /*  Cambia el color de fondo al pasar el mouse sobre el botón   */
 .botonSalida:hover {
     background-color: #003D5B;
+}
+
+@media screen and (min-width: 1000px) {
+    /*  Estilos para la sección principal de la página de error */
+    #contenidoPrincipal {
+        gap: 130px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    /*  Estilos para el título del error    */
+    .tituloError {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    /*  Estilos para los textos del mensaje de error    */
+    .descripcionError, .ayudaError {
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-bottom: 55px;
+        font-size: 22px;
+        transform: scaleY(1.2);
+    }
+
+    /*  Ajusta la separación inferior del texto de la descripción y el espaciado entre las letras   */
+    .descripcionError {
+        margin-bottom: 70px;
+        letter-spacing: 0.8px;
+    }
+
+    /*  Estilos para el botón   */
+    .botonSalida {
+        padding: 20px 25px;
+        font-size: 20px;
+        transform: translate(-30px, -5px);
+    }
 }
