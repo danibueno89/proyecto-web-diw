@@ -13,6 +13,18 @@
   background-color: var(--secondary-50);
 }
 
+/*
+=================================== 
+    VÍDEO
+===================================
+*/
+
+video {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px grey;
+}
+
 .home-container section {
   margin: 0 3rem;
   display: flex;
@@ -97,7 +109,7 @@
 
 @media screen and (min-width: 1900px) {
   .breadcrumb {
-    margin-left: 12rem;
+    margin-left: 0rem;
   }
 
   .home-container .infoProducto h2{

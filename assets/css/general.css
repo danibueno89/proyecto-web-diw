@@ -116,6 +116,7 @@ CABECERA DEL DOM
 .cabecera-global .menu-global {
   width: 60%;
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   align-items: center;
@@ -150,12 +151,35 @@ CABECERA DEL DOM
 
 /*
 =================================== 
+    CONTENEDOR BREADCRUMB
+===================================
+*/
+.breadcrumb-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20rem;
+}
+
+/*
+=================================== 
+    AUDIO BACKGROUND
+
+===================================
+*/
+audio {
+  border: 5px solid var(--primary-600);
+  border-radius: 10px;
+  opacity: 0.5;
+  height: 15px;
+}
+
+/*
+=================================== 
     BREADCRUMB DE CADA VISTA
 ===================================
 */
 .breadcrumb {
-  align-self: flex-start;
-  margin-left: 10rem;
   font-size: 1.5rem;
   font-family: Roboto, sans-serif;
   color: var(--secondary-700);

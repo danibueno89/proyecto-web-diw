@@ -34,8 +34,8 @@
     BREADCRUMB
 ===================================
 */
-.breadcrumb {
-  margin-left: 15rem;
+.breadcrumb-container {
+  gap: 17rem;
 }
 
 .breadcrumb::before {
@@ -161,7 +161,7 @@
 
 @media screen and (min-width: 1900px) {
   .breadcrumb {
-    margin-left: 25rem;
+    margin-left: 0rem;
   }
 
   .columna-version {
