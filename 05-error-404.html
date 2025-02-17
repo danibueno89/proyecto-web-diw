@@ -19,53 +19,55 @@
 <body>
 
     <!-- CABECERA -->
-    <header id="header" class="cabecera-global">
-        <section>
-        <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
-                width="200" /></a>
-        <p class="fuenteLogo">RELAX<br>SOFT</p>
+   <header id="header" class="cabecera-global">
+        <section class="logo">
+            <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
+                    width="200" /></a>
+            <p class="fuenteLogo">RELAX<br>SOFT</p>
         </section>
-        <section>
-            <ul>
-                <li>
-                    <a href="#">PROYECTOS</a>
-                </li>
-                <li>|</li>
-                <li>
-                    <a href="#">EMPRESA</a>
-                </li>
-                <li>|</li>
-                <li>
-                    <a href="./02-item-list.html">APP WEB</a>
-                </li>
-                <li>|</li>
-                <li>
-                    <a href="./04-contact.html">CONTACTO</a>
-                </li>
-            </ul>
+        <section class="menu-global">
+            <a href="#">PROYECTOS</a>
+
+            <hr>
+
+            <a href="#">EMPRESA</a>
+
+            <hr>
+
+            <a href="./02-item-list.html">APP WEB</a>
+
+            <hr>
+
+            <a href="./04-contact.html">CONTACTO</a>
+
         </section>
     </header>
 
     <!-- PARTE PRINCIPAL -->
-    <main id="pagina-error">
-        <section>
-            <img id="imagen-error" src="./assets/img/pictures-backgrounds/error-404.png" alt="page-not-found" width="388" />
+    <main id="contenidoPrincipal" class="contenidoPrincipal">
+
+        <!--    SECCIÓN CON IMAGEN ERROR 404    -->
+        <section class="errorImagen">
+            <img class="imagenError" src="./assets/img/pictures-backgrounds/error-404.png" alt="page-not-found" width="388" />
         </section>
-        <section>
-            <article id="error-mensaje">
-                <h2 id="error-titulo">Página no encontrada</h2>
-                <p id="error-texto"><small>No se ha encontrado la página que buscas.</small></p>
-                <p id="error-descripcion"><small>Puedes visitar la página anterior o volver a nuestra página de inicio.</small></p>
-                <a href="./01-home.html"><input type="button" value="¡ SÁCAME DE AQUÍ !" /></a>
+        
+        <!--    SECCIÓN CON MENSAJES INFORMATIVOS PARA EL USUARIO    -->
+        <section class="errorMensajes">
+            <article id="articuloError" class="articuloError">
+                <h2 class="tituloError">Página no encontrada</h2>
+                <p class="descripcionError"><small>No se ha encontrado la página que buscas.</small></p>
+                <p class="ayudaError"><small>Puedes visitar la página anterior o volver a nuestra página de inicio.</small></p>
+                <a href="./01-home.html" id="enlaceSalida"><input type="button" value="¡ SÁCAME DE AQUÍ !" class="botonSalida"/></a>
             </article>
         </section>
+
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer>
+   <footer>
 
         <!-- SECCIÓN FOOTER LEGALIDAD-->
-        <section>
+        <section class="legalidad-container">
             <p>&copy; Copyright 2024 Relax Soft</p>
             <p>Política de cookies</p>
             <p>Términos y condiciones</p>
@@ -73,13 +75,13 @@
         </section>
 
         <!-- BARRA VERTICAL PARA DECORAR Y SEPARAR SECTION EN FOOTER -->
-        <hr>
+        <hr class="barra-vertical-footer">
 
         <!-- SECCIÓN FOOTER CONTACTO-->
-        <section>
+        <section class="contacto-container">
 
             <!-- ARTÍCULO DIRECCIONES Y TELÉFONOS -->
-            <article>
+            <article class="direcciones">
 
                 <p>
                     <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
@@ -103,15 +105,15 @@
             </article>
 
             <!-- ARTÍCULO REDES SOCIALES -->
-            <article>
+            <article class="redes-sociales">
                 <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/icons/youtube-icon.png"
-                    alt="youtube-icon" width="36"></a>
+                        alt="youtube-icon" width="36"></a>
                 <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/icons/facebook-icon.png"
-                    alt="facebook-icon" width="36"></a>
+                        alt="facebook-icon" width="36"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/icons/instagram-icon.png"
-                    alt="instagram-icon" width="36"></a>
+                        alt="instagram-icon" width="36"></a>
                 <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/icons/twitter-icon.png"
-                    alt="twitter-icon" width="36"></a>
+                        alt="twitter-icon" width="36"></a>
             </article>
         </section>
     </footer>

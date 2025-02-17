@@ -1,11 +1,12 @@
 /*  Ajusta el ancho del cuerpo al 100% del viewport y establece un color de fondo   */
 body {
     width: 100vw;
+    overflow-x: hidden;
     background-color: #EAEAEA;
 }
 
 /*  Estilos para la sección principal de la página de error */
-#pagina-error {
+#contenidoPrincipal {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,59 +15,62 @@ body {
     height: 454px;
     margin: 50px auto;
     padding: 20px;
-    border-radius: 5px;
     background-color: #DFF4FF;
-    justify-content: center;
+    border-radius: 5px;
 }
 
 /*  Estilos para el título del error    */
-#error-titulo {
+.tituloError {
+    margin-bottom: 20px;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 /*  Estilos para los textos del mensaje de error    */
-#error-texto, #error-descripcion {
-    margin-top: 30px;
-    margin-right: 40px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-    font-size: 20px;
+.descripcionError, .ayudaError {
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 55px;
+    margin-left: 0px;
+    font-size: 22px;
+    font-style: italic;
+    transform: scaleY(1.2);
 }
 
-/*  Ajusta la separación inferior del texto de descripción  */
-#error-descripcion {
-    margin-bottom: 80px;
+/*  Ajusta la separación inferior del texto de la descripción y el espaciado entre las letras   */
+.descripcionError {
+    margin-bottom: 70px;
+    letter-spacing: 0.8px;
 }
 
 /*  Estilos con el tamaño de la imagen  */
-#imagen-error {
+.imagenError {
     width: 575px;
     height: 350px;
 }
 
 /*  Elimina la decoración del enlace utilizado en el botón  */
-a {
+#enlaceSalida {
     text-decoration: none;
 }
 
 /*  Estilos para el botón   */
-input {
+.botonSalida {
     display: block;
     margin: 0 auto;
-    background-color: #004E75;
-    color: white;
-    padding: 15px 25px;
+    padding: 20px 25px;
+    border: none;
     font-size: 20px;
-    text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: #004E75;
+    border-radius: 10px;
     transition: 0.3s;
     transform: translate(-30px, -5px);
 }
 
 /*  Cambia el color de fondo al pasar el mouse sobre el botón   */
-input:hover {
+.botonSalida:hover {
     background-color: #003D5B;
 }

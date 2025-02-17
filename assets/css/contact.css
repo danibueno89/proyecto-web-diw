@@ -4,13 +4,9 @@ body {
     background-color: #EAEAEA;
 }
 
+/*  Separación con la cabecera  */
 .breadcrumb {
-    width: 100%;
     margin-top: 30px;
-    font-size: 1.5rem;
-    color: var(--secondary-700);
-    text-align: center;
-    text-decoration: none;
 }
 
 /*  Configura el contenedor main con diseño flex, separación entre elementos y márgenes    */
@@ -132,9 +128,9 @@ margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar 
     font-family: Lato;
     font-size: 21px;
     font-weight: bold;
+    color: #fff;
     background-color: #005E8C;
     border-radius: 5px;
-    color: #fff;
     cursor: pointer;
 }
 
