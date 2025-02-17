@@ -40,7 +40,11 @@
 }
 
 .home-container .infoProducto img {
-    width: 36px;
+  width: 36px;
+}
+
+.home-container .infoProducto h2 {
+  font-size: 1.5rem;
 }
 
 .home-container .infoProducto header,
@@ -49,8 +53,8 @@
 }
 
 .home-container .infoProducto p {
-    font-size: 0.9rem;
-    font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .home-container .infoProducto button {
@@ -83,4 +87,24 @@
   background-color: var(--primary-400);
   cursor: pointer;
   transition-duration: 1s;
+}
+
+/*
+=================================== 
+    DIMESIÓN 1080P
+===================================
+*/
+
+@media screen and (min-width: 1900px) {
+  .breadcrumb {
+    margin-left: 12rem;
+  }
+
+  .home-container .infoProducto h2{
+    font-size: 2rem;
+  }
+
+  .home-container .infoProducto p {
+    font-size: 1.2rem;
+  }
 }

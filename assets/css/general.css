@@ -322,12 +322,16 @@ footer {
   }
 
   .barra-vertical-footer {
-    margin-left: -10rem;
+    margin-left: -8rem;
   }
 
+  .contacto-container {
+    width: 70%;
+  }
   .contacto-container .direcciones {
     flex-direction: row;
     width: 60%;
+    gap: 2rem
   }
 
   .contacto-container .direcciones p {
