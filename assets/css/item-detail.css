@@ -1,0 +1,73 @@
+body {
+    background-color: #EAEAEA;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: center;
+}
+
+main img {
+    width: 600px;
+    height: 800px;
+}
+
+main section:first-child {
+    background-color: #DFF4FF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main section:nth-child(2) {
+    padding: 40px;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+main p {
+    font-size: 24px;
+    color: #81AFC9;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+main button {
+    display: block;
+    margin-top: 60px;
+    margin-left: 30px;
+    padding: 12px 24px;
+    background-color: #9EDFFF;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+#tituloSuscripcion {
+    
+}
+
+.subtitulosSuscripcion {
+    color: #5B97B8;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+main button:hover {
+    background-color: #0056b3;
+}

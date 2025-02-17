@@ -10,6 +10,8 @@
       CPD, y aplicaciones web para la seguridad personal y profesional. Ofrecemos servicios personalizados con tecnología de última generación para mantener tus datos y dispositivos protegidos.">
     <title>Best option</title>
     <link rel="icon" href="./assets/img/pictures-backgrounds/brand-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/general.css"/>
+    <link rel="stylesheet" href="./assets/css/item-detail.css"/>
 </head>
 
 <!-- CUERPO DE WEB -->
@@ -17,27 +19,31 @@
 <body>
 
     <!-- CABECERA -->
-    <header id="header">
-        <nav>
+    <header id="header" class="cabecera-global">
+        <section>
             <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
                     width="200" /></a>
+            <p class="fuenteLogo">RELAX<br>SOFT</p>
+        </section>
+        <section>
             <ul>
                 <li>
                     <a href="#">PROYECTOS</a>
                 </li>
+                <li>|</li>
                 <li>
                     <a href="#">EMPRESA</a>
                 </li>
+                <li>|</li>
                 <li>
                     <a href="./02-item-list.html">APP WEB</a>
                 </li>
+                <li>|</li>
                 <li>
                     <a href="./04-contact.html">CONTACTO</a>
                 </li>
             </ul>
-        </nav>
-        <img src="./assets/img/icons/arrow_right_black.png" alt="arrow-right" width="24">
-        <p>Inicio > APP Web > Best Option</p> <img src="./assets/img/icons/arrow_right_black.png" alt="arrow-right" width="24">
+        </section>
     </header>
 
     <!-- SEPARACIÓN -->
@@ -48,19 +54,20 @@
 
         <!-- SECCIÓN SLIDER -->
         <section>
-            <img src="./assets/img/pictures-backgrounds/slider.png" alt="slider" wdith="40%" height="600">
+            <h1 id="tituloSlider">SLIDER</h1>
+            <img src="./assets/img/pictures-backgrounds/slider.png" alt="slider">
         </section>
 
         <!-- SECCIÓN DESCRIPCIÓN SUSCRIPCIÓN -->
          <section>
-            <h1>BEST OPTION</h1>
-            <p>
+            <h1 id="tituloSuscripcion">BEST OPTION</h1>
+            <p class="subtitulosSuscripcion">
                 Por solo 4,99€ al mes tendrás todas las ventajas de la versión gratuita y además podrás acceder a copias de seguridad y tus propios resguardos en la nube.
             </p>
-            <p>
+            <p class="subtitulosSuscripcion">
                 Disfruta de una capacidad de almacenamiento de 100 GB para tu copias en la nube y todo automatizado gracias a nuestra app.
             </p>
-            <p>
+            <p class="subtitulosSuscripcion">
                 No tengas miedo a borrar algo por equivocación o perder esos valiosos documentos. Tenemos un borrado opcional y una opción de borrado automático de 30 días.
             </p>
             <a href="#"><button>MÁS INFORMACIÓN</button></a>
@@ -82,48 +89,57 @@
    <!-- PIE DE PÁGINA -->
    <footer>
 
-      <!-- SECCIÓN FOOTER LEGALIDAD-->
-      <section>
-         <p>
-            <span>&copy; Copyright 2024 Relax Soft</span>
-            <span>Política de cookies</span>
-         </p>
-         <p>
-            <span>Términos y condiciones</span>
-            <span>Accesibilidad</span>
-         </p>
-      </section>
+        <!-- SECCIÓN FOOTER LEGALIDAD-->
+        <section>
+            <p>&copy; Copyright 2024 Relax Soft</p>
+            <p>Política de cookies</p>
+            <p>Términos y condiciones</p>
+            <p>Accesibilidad</p>
+        </section>
 
-      <!-- SECCIÓN FOOTER CONTACTO-->
-      <section>
+        <!-- BARRA VERTICAL PARA DECORAR Y SEPARAR SECTION EN FOOTER -->
+        <hr>
 
-         <!-- ARTÍCULO DIRECCIONES Y TELÉFONOS -->
-         <article>
-            <p>Sede Main: <a
-                  href="https://acortar.link/5mc12g">4298
-                  24th St, San Francisco, CA, 94114</a></p>
-            <p>Sede Enlace: <a
-                  href="https://acortar.link/HhodBu">Gran
-                  Vía, 34, Centro, 28013 Madrid</a></p>
-            <p>Teléfono California: <a href="tel:+1 800 553 2447">+1 800 553 2447</a> </p>
-            <p>Teléfono España: <a href="tel:+34 91 234 56 78">+34 91 234 56 78</a></p>
-            <a href="whatsapp://send?phone=666666666"><img src="./assets/img/icons/whatsapp-icon.png"
-                  alt="whatsapp-icon" width="36"></a>
-         </article>
+        <!-- SECCIÓN FOOTER CONTACTO-->
+        <section>
 
-         <!-- ARTÍCULO REDES SOCIALES -->
-         <article>
-            <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/icons/youtube-icon.png"
-                  alt="youtube-icon" width="36"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/icons/facebook-icon.png"
-                  alt="facebook-icon" width="36"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/icons/instagram-icon.png"
-                  alt="instagram-icon" width="36"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/icons/twitter-icon.png"
-                  alt="twitter-icon" width="36"></a>
-         </article>
-      </section>
-   </footer>
+            <!-- ARTÍCULO DIRECCIONES Y TELÉFONOS -->
+            <article>
+
+                <p>
+                    <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
+                    Teléfono California: <a href="tel:+1 800 553 2447">+1 800 553 2447</a>
+                </p>
+
+                <p>
+                    <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
+                    Teléfono España: <a href="tel:+34 91 234 56 78">+34 91 234 56 78</a>
+                </p>
+
+                <p>
+                    <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
+                    Sede Main: <a href="https://acortar.link/5mc12g">4298, 24th St, San Francisco, CA, 94114</a>
+                </p>
+
+                <p>
+                    <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
+                    Sede Enlace: <a href="https://acortar.link/HhodBu">Gran Vía, 34, Centro, 28013 Madrid</a>
+                </p>
+            </article>
+
+            <!-- ARTÍCULO REDES SOCIALES -->
+            <article>
+                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/icons/youtube-icon.png"
+                        alt="youtube-icon" width="36"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/icons/facebook-icon.png"
+                        alt="facebook-icon" width="36"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/icons/instagram-icon.png"
+                        alt="instagram-icon" width="36"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/icons/twitter-icon.png"
+                        alt="twitter-icon" width="36"></a>
+            </article>
+        </section>
+    </footer>
 </body>
 
 </html>

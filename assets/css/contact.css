@@ -1,129 +1,144 @@
 /*  Establece el ancho del viewport y el color de fondo de la página    */
 body {
-    width: 100vw;
+    overflow-x: hidden;
     background-color: #EAEAEA;
 }
 
-/*  Configura el contenedor principal con diseño flex, separación entre elementos y márgenes    */
-main {
+.breadcrumb {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: var(--secondary-700);
+    text-align: center;
+    text-decoration: none;
+}
+
+/*  Configura el contenedor main con diseño flex, separación entre elementos y márgenes    */
+#contenidoPrincipal {
     display: flex;
     gap: 150px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 60px;
     margin-left: 150px;
 }
 
-/*  Define el tamaño del texto de los encabezados dentro de main */
-main h2 {
+/*  Define el tamaño del texto del encabezado principal dentro de main */
+.encabezadoSeccion h2, .tituloFormulario {
+    font-family: Roboto;
     font-size: 30px;
+    font-weight: bold;
 }
 
-/*  Define el tamaño del texto de los párrafos dentro de main   */
-main p {
+/*  Define el tamaño del texto de los párrafos dentro de main y agrega un pequeño 
+margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar la alineación */
+.telefono, .direccion {
+    margin-top: 25px;
+    margin-left: 10px;
     font-size: 18px;
 }
 
-/*  Estilos generales para los enlaces, sin subrayado y con color negro  */
-a {
+/*  Estilos generales para los enlaces de los teléfonos, sin subrayado y con color negro  */
+.enlaceTelefono {
+    color: #000;
     text-decoration: none;
-    color: black;
 }
 
-/*  Agrega márgenes superior e inferior a los encabezados de las secciones  */
-#contact-info h2, #form-container h2 {
+/*  Agrega márgenes superior e inferior a los encabezados de las secciones y artículos  */
+#infoContacto header, .tituloFormulario {
     margin-top: 45px;
     margin-bottom: 35px;
 }
 
-/*  Agrega un pequeño margen izquierdo a los párrafos dentro de contact-info para mejorar la alineación */
-#contact-info p {
-    margin-left: 10px;
-}
-
-/*  Agrega un margen superior entre párrafos consecutivos dentro de contact-info  */
-#contact-info p + p {
-    margin-top: 25px;
-}
-
 /*  Espaciado entre los iframes y otros elementos */
-iframe {
+.mapa {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10px;
 }
 
 /*  Estilos generales del formulario    */
-#form {
+#formulario {
     width: 500px;
     margin: 20px auto;
     padding: 10px;
     padding-bottom: 40px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #DFF4FF;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+    background-color: #DFF4FF;
+    border-radius: 5px;
 }
 
 /*  Define márgenes superior e inferior para el encabezado del formulario */
-#form-container h1 {
+#infoFormulario h1 {
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 /*  Estilos de las etiquetas labels  */
-#form-container label {
+#infoFormulario label {
     display: block;
     margin-top: 30px;
+    margin-left: 50px;
     margin-bottom: 20px;
+    font-family: Roboto;
     font-size: 22px;
     font-weight: bold;
-    font-family: Roboto;
 }
 
 /*  Estilos del título dentro del formulario    */
-#form h2 {
+#formulario .tituloFormulario {
     width: 100%;
     margin-top: 15px;
     text-align: center;
 }
 
 /*  Estilos de los campos de entrada    */
-#form-container input[type="text"], 
-#form-container input[type="email"], 
-#form-container select, 
-#form-container textarea {
-    width: 95%;
+#infoFormulario input[type="text"], 
+#infoFormulario input[type="email"], 
+#infoFormulario select, #infoFormulario textarea {
+    width: 70%;
+    margin-right: 40px;
     margin-bottom: 15px;
+    margin-left: 50px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 18px;
     font-family: 'IBM Plex Mono';
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+#infoFormulario select {
+    width: 75%;
 }
 
 /*  Agrega un margen inferior extra al área de texto para separarla del botón   */
-#form-container textarea {
+#infoFormulario textarea {
     margin-bottom: 40px;
 }
 
 
+/*  Estilo para el ancho textarea */
+#infoFormulario textarea {
+    width: 80%;
+}
+
 /*  Estilos del botón de envío   */
-#form-container input[type="submit"] {
+#infoFormulario input[type="submit"] {
     display: block;
     margin: 0 auto;
     padding: 15px 65px;
     border: none;
-    border-radius: 5px;
-    background-color: #005E8C;
-    color: #fff;
+    font-family: Lato;
     font-size: 21px;
     font-weight: bold;
-    font-family: Lato;
+    background-color: #005E8C;
+    border-radius: 5px;
+    color: #fff;
     cursor: pointer;
 }
 
 /*  Efecto al pasar el cursor sobre el botón de envío   */
-#form-container input[type="submit"]:hover {
+#infoFormulario input[type="submit"]:hover {
     background-color: #0b587e;
 }
