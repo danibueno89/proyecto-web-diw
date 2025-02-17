@@ -18,6 +18,15 @@
 
 /*
 =================================== 
+    BANNER
+===================================
+*/
+.banner {
+  height: 20rem;
+}
+
+/*
+=================================== 
     CONTENEDOR GLOBAL DE VERSIONES
 ===================================
 */
@@ -39,11 +48,11 @@
 }
 
 .breadcrumb::before {
-  left: -20%;
+  left: -30%;
 }
 
 .breadcrumb::after {
-  right: -20%;
+  right: -30%;
 }
 
 /*
@@ -159,7 +168,7 @@
 ===================================
 */
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1600px) {
   .breadcrumb {
     margin-left: 0rem;
   }
@@ -175,5 +184,9 @@
   .descripcion-producto p {
     font-size: 1.2rem;
     margin: 1rem 0;
+  }
+
+  .banner {
+    height: 25rem;
   }
 }

@@ -1,14 +1,14 @@
 /*
-    =================================== 
+=================================== 
     CUERPO PRINCIPAL DEL DOM
-    ===================================
+===================================
 */
 .home-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
   gap: 5rem;
   background-color: var(--secondary-50);
 }
@@ -21,6 +21,7 @@
 
 video {
   width: 50%;
+  margin-top: -50px;
   border-radius: 10px;
   box-shadow: 0 0 20px grey;
 }
@@ -81,6 +82,11 @@ video {
   transition-duration: 1s;
 }
 
+.home-container .infoProducto a {
+  color: black;
+  text-decoration: none;
+}
+
 .home-container .imagenProducto {
   height: 250px;
   width: 40%;
@@ -107,7 +113,7 @@ video {
 ===================================
 */
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1600px) {
   .breadcrumb {
     margin-left: 0rem;
   }
