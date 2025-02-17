@@ -132,9 +132,9 @@ margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar 
     font-family: Lato;
     font-size: 21px;
     font-weight: bold;
+    color: #fff;
     background-color: #005E8C;
     border-radius: 5px;
-    color: #fff;
     cursor: pointer;
 }
 
