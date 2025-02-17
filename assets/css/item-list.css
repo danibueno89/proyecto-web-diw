@@ -1,0 +1,99 @@
+/*
+=================================== 
+    CUERPO PRINCIPAL DEL DOM
+===================================
+*/
+
+.item-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-50);
+}
+
+/*
+=================================== 
+    CONTENEDOR GLOBAL DE VERSIONES
+===================================
+*/
+.contenedor-global-versiones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+/*
+=================================== 
+    BREADCRUMB
+===================================
+*/
+.breadcrumb::before {
+    left: -20%;
+}
+
+.breadcrumb::after {
+    right: -20%;
+}
+
+/*
+=================================== 
+    SECCIONES VERSIÓN DEL PRODUCTO
+===================================
+*/
+
+.columna-version {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    width: 250px;
+}
+
+/*
+=================================== 
+    IMÁGENES SOLAPADAS
+===================================
+*/
+
+.imagenes-solapadas-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-100);
+    width: 100%;
+
+}
+
+.imagenes-solapadas-container:nth-child(2) {
+    background-color: var(--primary-300);
+}
+
+.imagenes-solapadas-container:last-child {
+    background-color: var(--primary-600);
+}
+
+.imagenes-solapadas-container,
+.imagenes-solapadas-container img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.imagenes-solapadas-container img {
+    opacity: 0.5;
+    width: 100%;
+}
+
+.imagenes-solapadas-container img:first-child {
+    height: 250px;
+}
+
+.imagenes-solapadas-container img:last-child {
+    height: 250px;
+}

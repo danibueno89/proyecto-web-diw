@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description"
       content="Relax Soft es una empresa de ciberseguridad especializada en proteger tanto hogares como empresas con soluciones avanzadas en cámaras IP, cerraduras electrónicas, 
-      CPD, y aplicaciones web para la seguridad personal y profesional. Ofrecemos servicios personalizados con tecnología de última generación para mantener tus datos y dispositivos protegidos.">
+   CPD, y aplicaciones web para la seguridad personal y profesional. Ofrecemos servicios personalizados con tecnología de última generación para mantener tus datos y dispositivos protegidos.">
    <title>Inicio</title>
    <link rel="icon" href="./assets/img/pictures-backgrounds/brand-logo.png" type="image/x-icon">
    <link rel="stylesheet" href="./assets/css/general.css">
@@ -20,34 +20,36 @@
 
    <!-- CABECERA -->
    <header id="header" class="cabecera-global">
-      <section>
+      <section class="logo">
          <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
                width="200" /></a>
          <p class="fuenteLogo">RELAX<br>SOFT</p>
       </section>
-      <section>
-         <ul>
-            <li>
-               <a href="#">PROYECTOS</a>
-            </li>
-            <li>|</li>
-            <li>
-               <a href="#">EMPRESA</a>
-            </li>
-            <li>|</li>
-            <li>
-               <a href="./02-item-list.html">APP WEB</a>
-            </li>
-            <li>|</li>
-            <li>
-               <a href="./04-contact.html">CONTACTO</a>
-            </li>
-         </ul>
+      <section class="menu-global">
+         <a href="#">PROYECTOS</a>
+
+         <hr>
+
+         <a href="#">EMPRESA</a>
+
+         <hr>
+
+         <a href="./02-item-list.html">APP WEB</a>
+
+         <hr>
+
+         <a href="./04-contact.html">CONTACTO</a>
+
       </section>
    </header>
 
    <!-- PARTE PRINCIPAL -->
-   <main>
+   <main class="home-container">
+
+      <!-- ANCLA HACIA HEADER -->
+      <aside>
+         <a href="#top"><img src="./assets/img/icons/go-to-top-black.png" alt="go-to-top"></a>
+      </aside>
 
       <!-- BREADCRUMB -->
       <a class="breadcrumb" href=" 01-home.html">INICIO</a>
@@ -135,16 +137,12 @@
       </section>
    </main>
 
-   <!-- ANCLA HACIA HEADER -->
-   <aside>
-      <a href="#top"><img src="./assets/img/icons/go-to-top-black.png" alt="go-to-top"></a>
-   </aside>
 
    <!-- PIE DE PÁGINA -->
    <footer>
 
       <!-- SECCIÓN FOOTER LEGALIDAD-->
-      <section>
+      <section class="legalidad-container">
          <p>&copy; Copyright 2024 Relax Soft</p>
          <p>Política de cookies</p>
          <p>Términos y condiciones</p>
@@ -152,13 +150,13 @@
       </section>
 
       <!-- BARRA VERTICAL PARA DECORAR Y SEPARAR SECTION EN FOOTER -->
-      <hr>
+      <hr class="barra-vertical-footer">
 
       <!-- SECCIÓN FOOTER CONTACTO-->
-      <section>
+      <section class="contacto-container">
 
          <!-- ARTÍCULO DIRECCIONES Y TELÉFONOS -->
-         <article>
+         <article class="direcciones">
 
             <p>
                <img src="./assets/img/icons/map-icon-black.png" alt="icono mapa" width="12">
@@ -182,7 +180,7 @@
          </article>
 
          <!-- ARTÍCULO REDES SOCIALES -->
-         <article>
+         <article class="redes-sociales">
             <a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/icons/youtube-icon.png"
                   alt="youtube-icon" width="36"></a>
             <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/icons/facebook-icon.png"

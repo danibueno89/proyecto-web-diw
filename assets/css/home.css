@@ -3,7 +3,7 @@
     CUERPO PRINCIPAL DEL DOM
     ===================================
 */
-main {
+.home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,14 +13,14 @@ main {
   background-color: var(--secondary-50);
 }
 
-main section {
+.home-container section {
   margin: 0 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-main section .infoProducto {
+.home-container .infoProducto {
   align-self: flex-start;
   flex-direction: column;
   align-items: center;
@@ -32,28 +32,28 @@ main section .infoProducto {
   gap: 2rem;
 }
 
-main section .infoProducto header {
+.home-container .infoProducto header {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-main section .infoProducto img {
+.home-container .infoProducto img {
     width: 36px;
 }
 
-main section .infoProducto header,
-main section .infoProducto p {
+.home-container .infoProducto header,
+.home-container .infoProducto p {
   color: var(--secondary-700);
 }
 
-main section .infoProducto p {
+.home-container .infoProducto p {
     font-size: 0.9rem;
     font-family: 'IBM Plex Mono', monospace;
 }
 
-main section .infoProducto button {
+.home-container .infoProducto button {
   width: fit-content;
   background-color: var(--primary-100);
   border-radius: 10px;
@@ -65,7 +65,7 @@ main section .infoProducto button {
   transition-duration: 1s;
 }
 
-main section .imagenProducto {
+.home-container .imagenProducto {
   height: 250px;
   width: 40%;
 }
@@ -79,7 +79,7 @@ main section .imagenProducto {
 }
 
 /* TRANSICIONES */
-main section .infoProducto button:hover {
+.home-container .infoProducto button:hover {
   background-color: var(--primary-400);
   cursor: pointer;
   transition-duration: 1s;

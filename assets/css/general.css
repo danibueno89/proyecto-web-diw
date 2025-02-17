@@ -1,9 +1,19 @@
+/*
+=================================== 
+    DIMENSIONES 720P
+===================================
+*/
+
 /* VARIABLES PARA COLORES DE LAS GUÍA DE ESTILO */
 :root {
-  --primary-100: #9edfff;
+  --primary-100: #9EDFFF;
+  --primary-300: #1DB4FF;
   --primary-400: #00a8fc;
+  --primary-600: #005E8C;
+
   --secondary-700: #6a6a6a;
   --secondary-50: #eaeaea;
+
   --neutral-400: #dae8ef;
 }
 
@@ -89,45 +99,40 @@ CABECERA DEL DOM
   transition-duration: 1s;
 }
 
-.cabecera-global section:first-child {
+.cabecera-global .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40%;
 }
 
-.cabecera-global .fuenteLogo {
+.cabecera-global .logo .fuenteLogo {
   font-family: "Algerian", cursive;
   font-size: 3em;
   color: var(--primary-400);
   text-align: center;
 }
 
-.cabecera-global section:nth-child(2) {
+.cabecera-global .menu-global {
   width: 60%;
   display: flex;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
 }
 
-.cabecera-global ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  justify-content: space-evenly;
-}
-
-.cabecera-global li {
-  padding: 0.5rem;
-}
-
-.cabecera-global a,
-li {
+.cabecera-global a {
   text-decoration: none;
   color: var(--primary-400);
   font-size: 1.2em;
   transition-duration: 1s;
+}
+
+.cabecera-global hr {
+  width: 3px;
+  height: 20px;
+  background-color: var(--primary-400);
+  border: none;
 }
 
 /* TRANSICIONES */
@@ -148,8 +153,9 @@ li {
     BREADCRUMB DE CADA VISTA
 ===================================
 */
-main .breadcrumb {
-  justify-self: center;
+.breadcrumb {
+  align-self: flex-start;
+  margin-left: 10rem;
   font-size: 1.5rem;
   font-family: Roboto, sans-serif;
   color: var(--secondary-700);
@@ -158,7 +164,7 @@ main .breadcrumb {
 }
 
 /* FLECHAS DE BREADCRUMBS */
-main .breadcrumb::before {
+.breadcrumb::before {
   content: "";
   position: absolute;
   width: 36px;
@@ -169,11 +175,11 @@ main .breadcrumb::before {
   background-image: url("../img/icons/arrow_right_black.png");
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 0.5s;
+  opacity: 1;
+  animation: flash-breadcrumb 1s linear infinite alternate;
 }
 
-main .breadcrumb::after {
+.breadcrumb::after {
   content: "";
   position: absolute;
   width: 36px;
@@ -182,19 +188,21 @@ main .breadcrumb::after {
   top: 50%;
   transform: translateY(-50%) rotateY(180deg);
   background-image: url("../img/icons/arrow_right_black.png");
-  
+
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-main .breadcrumb:hover::before,
-main .breadcrumb:hover::after {
   opacity: 1;
-  transition-duration: 0.5s;
+  animation: flash-breadcrumb 1s linear infinite alternate;
 }
 
+@keyframes flash-breadcrumb {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /*
 =================================== 
@@ -204,7 +212,7 @@ ASIDE DEL DOM
 aside {
   position: fixed;
   right: 3%;
-  bottom: 10%;
+  bottom: 20%;
 }
 
 aside img {
@@ -231,7 +239,7 @@ footer {
     PRIMERA SECCIÓN DEL FOOTER
 ===================================
 */
-footer section:first-child {
+.legalidad-container {
   margin-left: 1em;
   display: flex;
   flex-wrap: wrap;
@@ -240,11 +248,16 @@ footer section:first-child {
   gap: 1em;
 }
 
-footer section:first-child p {
+.legalidad-container p {
   width: 40%;
 }
 
-footer hr {
+/*
+=================================== 
+    BARRA DIVISORA DEL FOOTER
+===================================
+*/
+.barra-vertical-footer {
   background-color: var(--primary-400);
   width: 4px;
   border: none;
@@ -258,7 +271,7 @@ footer hr {
     ÚLTIMA SECCIÓN DEL FOOTER
 ===================================
 */
-footer section:last-child {
+.contacto-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -266,22 +279,19 @@ footer section:last-child {
   width: 50%;
 }
 
-footer section:last-child a {
+.contacto-container a {
   text-decoration: none;
   color: black;
 }
 
-footer section:last-child article:first-child {
+.contacto-container .direcciones {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-footer section:last-child article:first-child img {
-  margin: 0 0.3rem 0 0;
-}
-
-footer section:last-child article:last-child {
+.contacto-container .redes-sociales {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,6 +299,48 @@ footer section:last-child article:last-child {
   gap: 1rem 0.5rem;
 }
 
-footer section:last-child article:last-child a {
+.contacto-container .redes-sociales img {
+  margin: 0 0.3rem 0 0;
+}
+
+.contacto-container .redes-sociales a {
   width: 40%;
+}
+
+/*
+=================================== 
+    DIMENSIONES 1080P
+===================================
+*/
+@media screen and (min-width: 1900px) {
+  .menu-global {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    gap: 10rem;
+  }
+
+  .barra-vertical-footer {
+    margin-left: -10rem;
+  }
+
+  .contacto-container .direcciones {
+    flex-direction: row;
+    width: 60%;
+  }
+
+  .contacto-container .direcciones p {
+    width: 40%;
+  }
+
+  .contacto-container .redes-sociales {
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 40%;
+  }
+
+  .contacto-container .redes-sociales a {
+    width: 20%;
+  }
 }
