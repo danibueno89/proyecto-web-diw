@@ -334,6 +334,10 @@ footer {
   gap: 0.5rem;
 }
 
+.contacto-container .direcciones img {
+  vertical-align: middle;
+}
+
 .contacto-container .redes-sociales {
   display: flex;
   justify-content: center;
@@ -378,7 +382,7 @@ footer {
   .contacto-container .direcciones {
     flex-direction: row;
     width: 60%;
-    gap: 2rem
+    gap: 2rem;
   }
 
   .contacto-container .direcciones p {
