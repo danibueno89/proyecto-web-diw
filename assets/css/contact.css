@@ -1,37 +1,30 @@
-/*  Establece el ancho del viewport y el color de fondo de la página    */
 body {
-    overflow-x: hidden;
     background-color: #EAEAEA;
 }
 
-/*  Separación con la cabecera  */
 .breadcrumb {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-/*  Configura el contenedor main con diseño flex, separación entre elementos y márgenes    */
 #contenidoPrincipal {
     display: flex;
-    gap: 150px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    margin-left: 150px;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 100px;
 }
 
-/*  Define el tamaño del texto del encabezado principal dentro de main */
 .encabezadoSeccion h2, .tituloFormulario {
     font-family: Roboto;
-    font-size: 30px;
     font-weight: bold;
+    font-size: 20px;
 }
 
-/*  Define el tamaño del texto de los párrafos dentro de main y agrega un pequeño 
-margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar la alineación */
 .telefono, .direccion {
-    margin-top: 25px;
-    margin-left: 10px;
-    font-size: 18px;
+    margin-top: 16px;
+    margin-left: 7px;
+    font-size: 12px;
 }
 
 /*  Estilos generales para los enlaces de los teléfonos, sin subrayado y con color negro  */
@@ -40,52 +33,49 @@ margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar 
     text-decoration: none;
 }
 
-/*  Agrega márgenes superior e inferior a los encabezados de las secciones y artículos  */
 #infoContacto header, .tituloFormulario {
-    margin-top: 45px;
-    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-bottom: 23px;
 }
 
 /*  Espaciado entre los iframes y otros elementos */
 .mapa {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 10px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 7px;
+    width: 100%;
+    height: 200px;
 }
 
-/*  Estilos generales del formulario    */
+#infoFormulario h1 {
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
 #formulario {
-    width: 500px;
-    margin: 20px auto;
-    padding: 10px;
-    padding-bottom: 40px;
+    width: 100%;
+    margin: 14px auto;
+    padding: 7px;
+    padding-bottom: 27px;
     border: 1px solid #ddd;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     background-color: #DFF4FF;
     border-radius: 5px;
 }
 
-/*  Define márgenes superior e inferior para el encabezado del formulario */
-#infoFormulario h1 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-/*  Estilos de las etiquetas labels  */
 #infoFormulario label {
     display: block;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 14px;
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-/*  Estilos del título dentro del formulario    */
 #formulario .tituloFormulario {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -93,26 +83,24 @@ margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar 
 #infoFormulario input[type="text"], 
 #infoFormulario input[type="email"], 
 #infoFormulario select, #infoFormulario textarea {
-    width: 70%;
-    margin-right: 40px;
-    margin-bottom: 15px;
-    margin-left: 50px;
-    padding: 10px;
+    width: 80%;
+    margin-right: 27px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    padding: 7px;
     border: 1px solid #ddd;
     font-family: 'IBM Plex Mono';
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 4px;
 }
 
 #infoFormulario select {
-    width: 75%;
+    width: 85%;
 }
 
-/*  Agrega un margen inferior extra al área de texto para separarla del botón   */
 #infoFormulario textarea {
-    margin-bottom: 40px;
+    margin-bottom: 26px;
 }
-
 
 /*  Estilo para el ancho textarea */
 #infoFormulario textarea {
@@ -123,10 +111,10 @@ margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar 
 #infoFormulario input[type="submit"] {
     display: block;
     margin: 0 auto;
-    padding: 15px 65px;
+    padding: 10px 42px;
     border: none;
     font-family: Lato;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff;
     background-color: #005E8C;
@@ -137,4 +125,106 @@ margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar 
 /*  Efecto al pasar el cursor sobre el botón de envío   */
 #infoFormulario input[type="submit"]:hover {
     background-color: #0b587e;
+}
+
+/*  Efecto al pasar el cursor sobre el botón de envío   */
+#infoFormulario input[type="submit"]:hover {
+    background-color: #0b587e;
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1600px) {
+    /*  Separación con la cabecera  */
+    .breadcrumb {
+        margin-top: 30px;
+    }
+
+    .mapa {
+        max-width: 600px;
+        height: 290px;
+    }
+
+    /*  Configura el contenedor main con diseño flex, separación entre elementos y márgenes    */
+    #contenidoPrincipal {
+        gap: 150px;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-left: 150px;
+    }
+
+    /*  Define el tamaño del texto del encabezado principal dentro de main */
+    .encabezadoSeccion h2, .tituloFormulario {
+        font-size: 30px;
+    }
+
+    /*  Define el tamaño del texto de los párrafos dentro de main y agrega un pequeño 
+    margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar la alineación */
+    .telefono, .direccion {
+        margin-top: 25px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    /*  Agrega márgenes superior e inferior a los encabezados de las secciones y artículos  */
+    #infoContacto header, .tituloFormulario {
+        margin-top: 45px;
+        margin-bottom: 35px;
+    }
+
+    /*  Espaciado entre los iframes y otros elementos */
+    .mapa {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+
+    /*  Estilos generales del formulario    */
+    #formulario {
+        margin: 20px auto;
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+
+    /*  Define márgenes superior e inferior para el encabezado del formulario */
+    #infoFormulario h1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    /*  Estilos de las etiquetas labels  */
+    #infoFormulario label {
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    /*  Estilos del título dentro del formulario    */
+    #formulario .tituloFormulario {
+        margin-top: 15px;;
+    }
+
+    /*  Estilos de los campos de entrada    */
+    #infoFormulario input[type="text"], 
+    #infoFormulario input[type="email"], 
+    #infoFormulario select, #infoFormulario textarea {
+        margin-right: 40px;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    /*  Agrega un margen inferior extra al área de texto para separarla del botón   */
+    #infoFormulario textarea {
+        margin-bottom: 40px;
+    }
+
+    /*  Estilos del botón de envío   */
+    #infoFormulario input[type="submit"] {
+        margin: 0 auto;
+        padding: 15px 65px;
+        font-size: 21px;
+    }
 }
