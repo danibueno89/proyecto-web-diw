@@ -8,7 +8,7 @@ body {
 /*  Centra el breadcrumb horizontalmente y agrega un margen superior    */
 .breadcrumb-container {
     justify-content: center;
-    gap: 10rem;
+    gap: 15rem;
     margin-top: 20px;
 }
 
