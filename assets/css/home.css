@@ -27,7 +27,7 @@ video {
 }
 
 .home-container section {
-  margin: 0 3rem;
+  margin: 2rem 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -118,7 +118,7 @@ video {
     margin-left: 0rem;
   }
 
-  .home-container .infoProducto h2{
+  .home-container .infoProducto h2 {
     font-size: 2rem;
   }
 
