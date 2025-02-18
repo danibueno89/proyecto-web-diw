@@ -19,10 +19,10 @@
 <body>
 
     <!-- CABECERA -->
-    <header id="header" class="cabecera-global">
+   <header id="header" class="cabecera-global">
         <section class="logo">
             <a href="./01-home.html"><img src="./assets/img/pictures-backgrounds/brand-logo.png" alt="brand-logo"
-                width="200" /></a>
+                    width="200" /></a>
             <p class="fuenteLogo">RELAX<br>SOFT</p>
         </section>
         <section class="menu-global">
@@ -43,61 +43,56 @@
         </section>
     </header>
 
-    <!-- SEPARACIÓN -->
-    <hr>
+    <section class="breadcrumb-container">
+  
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb">
+            <a href="01-home.html">INICIO</a> / <a href="./03-item-detail.html">CONTACTO</a>
+        </div>
 
-    <main class="home-container">
-      
-        <section class="breadcrumb-container">
-  
-           <!-- BREADCRUMB -->
-           <a class="breadcrumb" href="01-home.html">INICIO ></a><a class="breadcrumb" href="02-item-list.html"> APP WEB ></a><a class="breadcrumb" href="#"> BEST OPTION</a>
-   
-           <!-- AUDIO BACKGROUND -->
+        <!-- AUDIO BACKGROUND -->
+        <article class="audio-container">
+           <p>Reproduzca música ambiente</p>
            <audio controls autoplay loop preload="auto">
-               <source src="assets/audio/ambiente.mp3">
-               <source src="assets/audio/ambiente.ogg">
+              <source src="assets/audio/ambiente.mp3">
+              <source src="assets/audio/ambiente.ogg">
            </audio>
-  
-       </section>
-    </main>
+        </article>
+
+    </section>
 
     <!-- PARTE PRINCIPAL -->
-    <main>
+    <main id="contenidoPrincipal">
 
         <!-- SECCIÓN SLIDER -->
-        <section>
-            <h1 id="tituloSlider">SLIDER</h1>
-            <img src="./assets/img/pictures-backgrounds/slider.png" alt="slider">
+        <section id="slider" class="seccionSlider">
+            <h1 id="tituloSlider" class="tituloSeccion">SLIDER</h1>
+            <img src="./assets/img/pictures-backgrounds/slider.png" alt="Slider" class="imagenSlider">
         </section>
 
         <!-- SECCIÓN DESCRIPCIÓN SUSCRIPCIÓN -->
-         <section>
-            <h1 id="tituloSuscripcion">BEST OPTION</h1>
-            <p class="subtitulosSuscripcion">
-                Por solo 4,99€ al mes tendrás todas las ventajas de la versión gratuita y además podrás acceder a copias de seguridad y tus propios resguardos en la nube.
-            </p>
-            <p class="subtitulosSuscripcion">
-                Disfruta de una capacidad de almacenamiento de 100 GB para tu copias en la nube y todo automatizado gracias a nuestra app.
-            </p>
-            <p class="subtitulosSuscripcion">
-                No tengas miedo a borrar algo por equivocación o perder esos valiosos documentos. Tenemos un borrado opcional y una opción de borrado automático de 30 días.
-            </p>
-            <a href="#"><button>MÁS INFORMACIÓN</button></a>
-         </section>
+        <section id="suscripcion" class="seccionSuscripcion">
+            <h1 id="tituloSuscripcion" class="tituloSeccion">BEST OPTION</h1>
+            <div class="subtitulosSuscripcion">
+                <p class="subtituloSuscripcion">
+                    Por solo 4,99€ al mes tendrás todas las ventajas de la versión gratuita y además podrás acceder a copias de seguridad y tus propios resguardos en la nube.
+                </p>
+                <p class="subtituloSuscripcion">
+                    Disfruta de una capacidad de almacenamiento de 100 GB para tu copias en la nube y todo automatizado gracias a nuestra app.
+                </p>
+                <p class="subtituloSuscripcion">
+                    No tengas miedo a borrar algo por equivocación o perder esos valiosos documentos. Tenemos un borrado opcional y una opción de borrado automático de 30 días.
+                </p>
+            </div>
+            <a href="#" class="enlaceSuscripcion"><button class="botonSuscripcion">MÁS INFORMACIÓN</button></a>
+        </section>
 
     </main>
-
-   <!-- SEPARACIÓN -->
-   <hr>
 
    <!-- ANCLA HACIA HEADER -->
    <aside>
       <a href="#top"><img src="./assets/img/icons/go-to-top-black.png" alt="go-to-top" width="36"></a>
    </aside>
-
-   <!-- SEPARACIÓN -->
-   <hr>
 
    <!-- PIE DE PÁGINA -->
    <footer>
@@ -133,7 +128,7 @@
                     <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
                     Sede Main: <a href="https://acortar.link/5mc12g">4298, 24th St, San Francisco, CA, 94114</a>
                 </p>
-
+                
                 <p>
                     <img src="./assets/img/icons/phone-icono-black.png" alt="telefono negro" width="12">
                     Sede Enlace: <a href="https://acortar.link/HhodBu">Gran Vía, 34, Centro, 28013 Madrid</a>
@@ -152,7 +147,7 @@
                         alt="twitter-icon" width="36"></a>
             </article>
         </section>
-    </footer>
+</footer>
 </body>
 
 </html>

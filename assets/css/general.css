@@ -44,6 +44,14 @@ body {
   font-style: normal;
 }
 
+/*  ROCKWELL EXTRA BOLD */
+@font-face {
+  font-family: 'Rockwell Extra Bold';
+  src: url('../fonts/rockwell-extra-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 h1 {
   font-size: 24px;
   font-family: Lato;
