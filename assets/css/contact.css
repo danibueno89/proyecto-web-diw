@@ -1,12 +1,17 @@
+/*  Ajusta el ancho del cuerpo al 100% del viewport y establece un color de fondo   */
 body {
     background-color: #EAEAEA;
+    width: 100%;
+    min-height: 100vh;
 }
 
+/*  Centra el breadcrumb horizontalmente y agrega un margen superior    */
 .breadcrumb-container {
+    justify-content: center;
     margin-top: 20px;
 }
 
-/*  Configura el contenedor main con diseño flex, separación entre elementos y márgenes    */
+/*  Contenedor principal con diseño flexible y separación entre elementos    */
 #contenidoPrincipal {
     display: flex;
     justify-content: center;
@@ -17,34 +22,33 @@ body {
     margin-bottom: 40px;
 }
 
-/*  Define el tamaño del texto del encabezado principal dentro de main */
+/*  Estilo para los títulos de las secciones */
 .encabezadoSeccion h2, .tituloFormulario {
     font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
 }
 
-/*  Define el tamaño del texto de los párrafos dentro de main y agrega un pequeño 
-    margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar la alineación */
+/*  Ajusta la alineación y el tamaño del texto en la sección de contacto */
 .telefono, .direccion {
     margin-top: 16px;
     margin-left: 7px;
     font-size: 12px;
 }
 
-/*  Estilos generales para los enlaces de los teléfonos, sin subrayado y con color negro  */
+/*  Estilos generales para los enlaces de los teléfonos (sin subrayado y con color negro)  */
 .enlaceTelefono {
     color: #000;
     text-decoration: none;
 }
 
-/*  Agrega márgenes superior e inferior a los encabezados de las secciones y artículos  */
+/*  Espaciado en los encabezados de contacto y formulario  */
 #infoContacto header, .tituloFormulario {
     margin-top: 30px;
     margin-bottom: 23px;
 }
 
-/*  Espaciado entre los iframes y otros elementos */
+/*  Estilos generales para el mapa */
 .mapa {
     margin-top: 18px;
     margin-bottom: 18px;
@@ -53,13 +57,13 @@ body {
     height: 200px;
 }
 
-/*  Define márgenes superior e inferior para el encabezado del formulario */
+/*  Ajusta márgenes del título del formulario */
 #infoFormulario h1 {
     margin-top: 14px;
     margin-bottom: 20px;
 }
 
-/*  Estilos generales del formulario    */
+/*  Contenedor del formulario con fondo y sombras    */
 #formulario {
     width: 90%;
     margin: 14px auto;
@@ -71,6 +75,7 @@ body {
     border-radius: 5px;
 }
 
+/*  Estilos para las etiquetas del formulario   */
 #infoFormulario label {
     display: block;
     margin-top: 20px;
@@ -81,13 +86,14 @@ body {
     font-weight: bold;
 }
 
+/*  Alinea el título del formulario */
 #formulario .tituloFormulario {
     width: 100%;
     margin-top: 10px;
     text-align: center;
 }
 
-/*  Estilos de los campos de entrada    */
+/*  Estilos para los campos de entrada y selección    */
 #infoFormulario input[type="text"], 
 #infoFormulario input[type="email"], 
 #infoFormulario select, #infoFormulario textarea {
@@ -102,10 +108,12 @@ body {
     border-radius: 4px;
 }
 
+/*  Estilo para el ancho del select */
 #infoFormulario select {
     width: 83%;
 }
 
+/*  Ajusta margen inferior del textarea */
 #infoFormulario textarea {
     margin-bottom: 26px;
 }
@@ -115,7 +123,7 @@ body {
     width: 80%;
 }
 
-/*  Estilos del botón de envío   */
+/*  Botón de envío con estilos de color y bordes   */
 #infoFormulario input[type="submit"] {
     display: block;
     margin: 0 auto;
@@ -128,11 +136,7 @@ body {
     background-color: #005E8C;
     border-radius: 5px;
     cursor: pointer;
-}
-
-/*  Efecto al pasar el cursor sobre el botón de envío   */
-#infoFormulario input[type="submit"]:hover {
-    background-color: #0b587e;
+    transition: background-color 0.3s;
 }
 
 /*  Efecto al pasar el cursor sobre el botón de envío   */
@@ -141,7 +145,8 @@ body {
 }
 
 /* Estilos para pantallas grandes */
-@media screen and (min-width: 1600px) {        
+@media screen and (min-width: 1600px) {  
+    /*  Ajuste del iframe   */      
     .mapa {
         max-width: 600px;
         height: 290px;
@@ -150,39 +155,45 @@ body {
         margin-left: 10px;
     }
 
+    /*  Cambios en el main  */
     #contenidoPrincipal {
         gap: 150px;
         margin-top: 30px;
         margin-bottom: 60px;
     }
 
+    /*  Tamaño de letra en encabezados  */
     .encabezadoSeccion h2, .tituloFormulario {
         font-size: 30px;
     }
 
+    /*  Tamaño de letra y márgenes de los párrafos telefono y dirección */
     .telefono, .direccion {
         margin-top: 25px;
         margin-left: 10px;
         font-size: 18px;
     }
 
+    /*  Márgenes de las cabeceras   */
     #infoContacto header, .tituloFormulario {
         margin-top: 45px;
         margin-bottom: 35px;
     }
 
+    /*  Estilos general formulario  */
     #formulario {
         margin: 20px auto;
         padding: 10px;
         padding-bottom: 40px;
     }
 
+    /*  Márgenes en el título   */
     #infoFormulario h1 {
         margin-top: 20px;
         margin-bottom: 30px;
     }
 
-    /*  Estilos de las etiquetas labels  */
+    /*  Ajusta márgenes y tamaño de etiquetas  */
     #infoFormulario label {
         margin-top: 30px;
         margin-left: 50px;
@@ -190,12 +201,12 @@ body {
         font-size: 22px;
     }
 
-    /*  Estilos del título dentro del formulario    */
+    /*  Ajusta el margen superior del título dentro del formulario   */
     #formulario .tituloFormulario {
         margin-top: 15px;;
     }
 
-    /*  Estilos de los campos de entrada    */
+    /*  Ajusta tamaño de los campos de entrada    */
     #infoFormulario input[type="text"], 
     #infoFormulario input[type="email"], 
     #infoFormulario select, #infoFormulario textarea {
@@ -206,11 +217,12 @@ body {
         font-size: 18px;
     }
 
-    /*  Agrega un margen inferior extra al área de texto para separarla del botón   */
+    /*  Ajuste del margen inferior del textarea   */
     #infoFormulario textarea {
         margin-bottom: 40px;
     }
 
+    /*  Ajuste tamaño del botón de envío    */
     #infoFormulario input[type="submit"] {
         margin: 0 auto;
         padding: 15px 65px;
@@ -218,8 +230,8 @@ body {
     }
 }
 
-/*  Estilo para evitar que el footer se despegue de su posición en pantallas grandes */
-@media screen and (min-height: 1600px) {
+/*  Mantiene el footer en la parte inferior en pantallas altas */
+@media screen and (min-height: 1716px) {
     footer {
         position: fixed;
         bottom: 0;
