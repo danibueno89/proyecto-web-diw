@@ -6,10 +6,10 @@
 
 /* VARIABLES PARA COLORES DE LAS GUÍA DE ESTILO */
 :root {
-  --primary-100: #9EDFFF;
-  --primary-300: #1DB4FF;
+  --primary-100: #9edfff;
+  --primary-300: #1db4ff;
   --primary-400: #00a8fc;
-  --primary-600: #005E8C;
+  --primary-600: #005e8c;
 
   --secondary-700: #6a6a6a;
   --secondary-50: #eaeaea;
@@ -162,7 +162,6 @@ CABECERA DEL DOM
   gap: 20rem;
 }
 
-
 /*
 =================================== 
 BREADCRUMB DE CADA VISTA
@@ -171,7 +170,6 @@ BREADCRUMB DE CADA VISTA
 .breadcrumb a {
   text-decoration: none;
   color: var(--secondary-700);
-  
 }
 
 .breadcrumb {
@@ -245,7 +243,6 @@ BREADCRUMB DE CADA VISTA
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 
 /*
 =================================== 
