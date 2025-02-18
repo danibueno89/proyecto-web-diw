@@ -2,25 +2,30 @@ body {
     background-color: #EAEAEA;
 }
 
-.breadcrumb {
+.breadcrumb-container {
     margin-top: 20px;
 }
 
+/*  Configura el contenedor main con diseño flex, separación entre elementos y márgenes    */
 #contenidoPrincipal {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 100px;
     margin-top: 20px;
     margin-bottom: 40px;
-    margin-left: 100px;
 }
 
+/*  Define el tamaño del texto del encabezado principal dentro de main */
 .encabezadoSeccion h2, .tituloFormulario {
     font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
 }
 
+/*  Define el tamaño del texto de los párrafos dentro de main y agrega un pequeño 
+    margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar la alineación */
 .telefono, .direccion {
     margin-top: 16px;
     margin-left: 7px;
@@ -33,6 +38,7 @@ body {
     text-decoration: none;
 }
 
+/*  Agrega márgenes superior e inferior a los encabezados de las secciones y artículos  */
 #infoContacto header, .tituloFormulario {
     margin-top: 30px;
     margin-bottom: 23px;
@@ -47,13 +53,15 @@ body {
     height: 200px;
 }
 
+/*  Define márgenes superior e inferior para el encabezado del formulario */
 #infoFormulario h1 {
     margin-top: 14px;
     margin-bottom: 20px;
 }
 
+/*  Estilos generales del formulario    */
 #formulario {
-    width: 100%;
+    width: 90%;
     margin: 14px auto;
     padding: 7px;
     padding-bottom: 27px;
@@ -95,7 +103,7 @@ body {
 }
 
 #infoFormulario select {
-    width: 85%;
+    width: 83%;
 }
 
 #infoFormulario textarea {
@@ -133,60 +141,42 @@ body {
 }
 
 /* Estilos para pantallas grandes */
-@media screen and (min-width: 1600px) {
-    /*  Separación con la cabecera  */
-    .breadcrumb {
-        margin-top: 30px;
-    }
-
+@media screen and (min-width: 1600px) {        
     .mapa {
         max-width: 600px;
         height: 290px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 10px;
     }
 
-    /*  Configura el contenedor main con diseño flex, separación entre elementos y márgenes    */
     #contenidoPrincipal {
         gap: 150px;
-        width: 100%;
         margin-top: 30px;
         margin-bottom: 60px;
-        margin-left: 150px;
     }
 
-    /*  Define el tamaño del texto del encabezado principal dentro de main */
     .encabezadoSeccion h2, .tituloFormulario {
         font-size: 30px;
     }
 
-    /*  Define el tamaño del texto de los párrafos dentro de main y agrega un pequeño 
-    margen izquierdo y superior a los párrafos dentro de infoContacto para mejorar la alineación */
     .telefono, .direccion {
         margin-top: 25px;
         margin-left: 10px;
         font-size: 18px;
     }
 
-    /*  Agrega márgenes superior e inferior a los encabezados de las secciones y artículos  */
     #infoContacto header, .tituloFormulario {
         margin-top: 45px;
         margin-bottom: 35px;
     }
 
-    /*  Espaciado entre los iframes y otros elementos */
-    .mapa {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        margin-left: 10px;
-    }
-
-    /*  Estilos generales del formulario    */
     #formulario {
         margin: 20px auto;
         padding: 10px;
         padding-bottom: 40px;
     }
 
-    /*  Define márgenes superior e inferior para el encabezado del formulario */
     #infoFormulario h1 {
         margin-top: 20px;
         margin-bottom: 30px;
@@ -221,10 +211,18 @@ body {
         margin-bottom: 40px;
     }
 
-    /*  Estilos del botón de envío   */
     #infoFormulario input[type="submit"] {
         margin: 0 auto;
         padding: 15px 65px;
         font-size: 21px;
+    }
+}
+
+/*  Estilo para evitar que el footer se despegue de su posición en pantallas grandes */
+@media screen and (min-height: 1600px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 }

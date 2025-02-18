@@ -1,16 +1,18 @@
 /*  Ajusta el ancho del cuerpo al 100% del viewport y establece un color de fondo   */
 body {
     background-color: #EAEAEA;
+    width: 100%;
+    height: 100%;
 }
 
 /*  Estilos para la sección principal de la página de error */
 #contenidoPrincipal {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 90px;
     width: 80%;
-    height: 454px;
+    height: auto;
     margin: 35px auto;
     padding: 14px;
     background-color: #DFF4FF;
@@ -43,7 +45,6 @@ body {
 
 /*  Estilos con el tamaño de la imagen  */
 .imagenError {
-    /*width: 575px;*/
     width: 100%;
     height: 350px;
 }
@@ -74,6 +75,11 @@ body {
     background-color: #003D5B;
 }
 
+footer {
+    overflow: hidden;
+}
+
+/*  Estilos para pantalla grandes (ancho mayor a 1000 píxeles)  */
 @media screen and (min-width: 1000px) {
     /*  Estilos para la sección principal de la página de error */
     #contenidoPrincipal {
@@ -108,5 +114,14 @@ body {
         padding: 20px 25px;
         font-size: 20px;
         transform: translate(-30px, -5px);
+    }
+}
+
+/*  Estilo para evitar que el footer se despegue de su posición en pantallas grandes */
+@media screen and (min-height: 809px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 }
