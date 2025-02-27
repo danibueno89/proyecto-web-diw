@@ -1,42 +1,11 @@
-/*
-=================================== 
-    DIMENSIONES 720P
-===================================
-*/
-
-/* VARIABLES PARA COLORES DE LAS GUÍA DE ESTILO */
-:root {
-  --primary-100: #9edfff;
-  --primary-300: #1db4ff;
-  --primary-400: #00a8fc;
-  --primary-600: #005e8c;
-  --primary-900: #002F46;
-
-  --secondary-700: #6a6a6a;
-  --secondary-50: #eaeaea;
-
-  --neutral-400: #dae8ef;
-}
-
-/* QUITAMOS TODOS LOS MÁRGENES Y ESPACIOS DEL NAVEGADOR */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
+/* IBM FLEX MONO */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
 
 /*
 =================================== 
     FUENTES PARA LA WEB
 ===================================
 */
-
-/* IBM FLEX MONO */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
 
 @font-face {
   font-family: "Algerian";
@@ -93,6 +62,40 @@ li {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+
+
+/* VARIABLES PARA COLORES DE LAS GUÍA DE ESTILO */
+:root {
+  --primary-100: #9edfff;
+  --primary-300: #1db4ff;
+  --primary-400: #00a8fc;
+  --primary-600: #005e8c;
+  --primary-900: #002F46;
+  
+  --secondary-50: #eaeaea;
+  --secondary-700: #6a6a6a;
+  --secondary-900: #3F3F3F;
+  
+  
+  --neutral-400: #dae8ef;
+}
+
+/* QUITAMOS TODOS LOS MÁRGENES Y ESPACIOS DEL NAVEGADOR */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+=================================== 
+DIMENSIONES 720P
+===================================
+*/
 
 /*
 =================================== 
@@ -248,8 +251,8 @@ BREADCRUMB DE CADA VISTA
   background-color: var(--primary-100);
 }
 
-.audio-container p {
-  font-size: 1.2rem;
+.audio-container h2 {
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
