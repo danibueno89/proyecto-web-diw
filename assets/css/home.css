@@ -61,14 +61,11 @@ video {
 }
 
 .home-container .infoProducto header {
-color: var(--secondary-700);
+  color: var(--secondary-700);
 }
 
 .home-container .infoProducto p {
-color: var(--secondary-900);
-}
-
-.home-container .infoProducto p {
+  color: var(--secondary-900);
   font-size: 0.9rem;
   font-family: "IBM Plex Mono", monospace;
 }
