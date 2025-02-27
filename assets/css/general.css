@@ -10,6 +10,7 @@
   --primary-300: #1db4ff;
   --primary-400: #00a8fc;
   --primary-600: #005e8c;
+  --primary-900: #325C73;
 
   --secondary-700: #6a6a6a;
   --secondary-50: #eaeaea;
@@ -117,7 +118,7 @@ CABECERA DEL DOM
 .cabecera-global .logo .fuenteLogo {
   font-family: "Algerian", cursive;
   font-size: 3em;
-  color: var(--primary-400);
+  color: var(--primary-900);
   text-align: center;
 }
 
@@ -132,7 +133,7 @@ CABECERA DEL DOM
 
 .cabecera-global a {
   text-decoration: none;
-  color: var(--primary-400);
+  color: var(--primary-900);
   font-size: 1.2em;
   transition-duration: 1s;
 }
@@ -140,7 +141,7 @@ CABECERA DEL DOM
 .cabecera-global hr {
   width: 3px;
   height: 20px;
-  background-color: var(--primary-400);
+  background-color: var(--primary-900);
   border: none;
 }
 
