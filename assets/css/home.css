@@ -90,14 +90,28 @@ video {
 .home-container .imagenProducto {
   height: 250px;
   width: 40%;
+  position: relative;
 }
 
 .imagenProducto img {
+  filter: brightness(0.3);
   height: 100%;
   width: 100%;
   border: none;
   border-radius: 15px;
   box-shadow: 0 0 10px grey;
+}
+
+.imagenProducto h2 {
+  font-size: 8cqmax;
+  color: white;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness initial;
 }
 
 /* TRANSICIONES */
@@ -124,5 +138,11 @@ video {
 
   .home-container .infoProducto p {
     font-size: 1.2rem;
+  }
+}
+
+@media (width <= 600px) {
+  .imagenProducto h2 {
+    font-size: 5cqmax;
   }
 }
