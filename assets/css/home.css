@@ -60,12 +60,12 @@ video {
   font-size: 1.5rem;
 }
 
-.home-container .infoProducto header,
-.home-container .infoProducto p {
+.home-container .infoProducto header {
   color: var(--secondary-700);
 }
 
 .home-container .infoProducto p {
+  color: var(--secondary-900);
   font-size: 0.9rem;
   font-family: "IBM Plex Mono", monospace;
 }
